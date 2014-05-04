@@ -8,7 +8,7 @@ categories:
 ---
 This week has been a job interview marathon. Tech interviews are an utterly different beast from the job interviews I'm used to. For one, they are **much** longer than non-technical interviews. Some companies have had me speak to half a dozen employees, from engineers to HR to management. The main differentiator, of course, is the technical portion of the interview itself.
 
-Technical questions in the interview setting can be extremely tricky. Typically I'm already a bit edgy from meeting so many new people, and the additional mental strain of being so highly invested in a positive outcome is just too much. My creative faculties seem to just shut down, and when I'm faced with a challenging question and no creative juices it leads to a panic response. I'm desperately reaching out for resources that *should* be there, but in the interview room there's&#8230;nothing. It is disconcerting, to say the least.
+Technical questions in the interview setting can be extremely tricky. Typically I'm already a bit edgy from meeting so many new people, and the additional mental strain of being so highly invested in a positive outcome is just too much. My creative faculties seem to just shut down, and when I'm faced with a challenging question and no creative juices it leads to a panic response. I'm desperately reaching out for resources that *should* be there, but in the interview room there's...nothing. It is disconcerting, to say the least.
 
 Once the process starts, it becomes self-reinforcing. Every passing second of staring at the empty whiteboard becomes an additional reason to doubt my capabilities. This downward spiral is very, very difficult to break. Here are a few strategies that have either worked for me, or are next on my list to try:
 

@@ -12,15 +12,16 @@ Delayed::Job (DJ) supports [multiple backends][5]. Most importantly for our purp
 
 TimeVault allows users to set [Pomodoro][6] timers and receive alerts when they are complete. Each timer has one or more Intervals with a start and stop time. When a timer starts, an Interval is created, which then creates an `IntervalWorker`:
 
-    def create_interval_worker
-      Delayed::Job.enqueue(IntervalWorker.new(id), run_at: when_to_run)
-      save
-    end
-    
+```ruby
+def create_interval_worker
+  Delayed::Job.enqueue(IntervalWorker.new(id), run_at: when_to_run)
+  save
+end
+```
 
 DJ supplies an `enqueue` class method. Here, I'm passing in a new `IntervalWorker` and using the `run_at` option to delay instantiation of the worker until the interval expires. DJ expects enqueued objects to have a `perform` method that will be called on execution. Here, the `IntervalWorker` calls `complete!` on the interval that created it.
 
-
+{% gist 6236724 %}
 
 `complete!` ends the interval by setting its `end` attribute to the current time. Note how the service object, `IntervalWorker`, is quite simple. All the actual logic is built into the model, `Interval`. This is an example of [separation of concerns][7]. Modifying the `Interval` is not a concern of the `IntervalWorker`.
 

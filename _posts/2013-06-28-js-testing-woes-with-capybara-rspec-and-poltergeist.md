@@ -12,8 +12,9 @@ With the help of an [excellent post][1] by Avdi Grimm, I installed [database_cle
 
 Thanks to [this reply][3] I tracked down the problem to a bug in RSpec 2.13. **If you are going to use database_cleaner with Capybara/poltergeist, make sure you are using RSpec >= 2.14.0.rc1**. For my Rails app, this is what I put in my `Gemfile`:
 
-    gem 'rspec-rails', "~> 2.14.0.rc1"
-    
+```ruby
+gem 'rspec-rails', "~> 2.14.0.rc1"
+```
 
 At this point, I thought I had the problem solved.
 
@@ -21,7 +22,7 @@ At this point, I thought I had the problem solved.
 
 Tests were still failing with ActiveRecord `not found` exceptions. Less frequently, but still enough to ruin the utility of my test suite. After much trial and error, I added a single line to the database_cleaner config in the reply above, and it appears to actually *work*. Here's my `database_cleaner.rb`:
 
-
+{% gist 5889100 %}
 
 Hopefully this helps some folks looking to use Capybara to test their JavaScript
 

@@ -13,10 +13,11 @@ Going from near-zero experience with front-end MVC frameworks to a functional Ba
     
     Using the gem hooks up Backbone to the [asset pipeline][4], which should improve page load times in production. It also provides us with a nice generator. After adding `backbone-on-rails` to the Gemfile, we can execute the following:
     
-        bundle install
-        rails g backbone:install
-        rails g backbone:scaffold MODEL
-        
+    ```bash
+    bundle install
+    rails g backbone:install
+    rails g backbone:scaffold MODEL
+    ```
     
     Passing in the name of the model, the generator will construct a directory structure and boilerplate files under `app/assets/javascripts`.
 
@@ -28,9 +29,10 @@ Going from near-zero experience with front-end MVC frameworks to a functional Ba
     
     The generator has also given us a router. Routers in Backbone are similar to Rails controllers. Unlike a Rails controller, there's very little magic to make our lives easier. These two lines are critical to understanding how a router works:
     
-        view = new App.Views.ModelAction(collection: @someCollection, model: @someModel)
-        $('.container').html(view.render().el)
-        
+    ```coffeescript
+    view = new App.Views.ModelAction(collection: @someCollection, model: @someModel)
+    $('.container').html(view.render().el)
+    ```
     
     The first line is instantiating a new view, and passing in a collection and model. Note that `collection` and `model` are special keywords. They will be made available to the view directly, whereas passing in arbitrary key-value pairs can and will result in hair-pulling.
     

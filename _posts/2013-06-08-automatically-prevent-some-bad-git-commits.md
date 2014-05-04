@@ -30,10 +30,11 @@ I've <a href="https://github.com/chronophasiac/githooks" rel="nofollow">forked t
 
 If any of these warning signs are detected in the code that's about to be committed, the script will throw up a warning with the file name(s) and abort the commit. For example:
 
-    Error: git pre-commit hook forbids committing lines with "debugger" to spec/features/test_spec.rb
-    --------------
-    To commit anyway, use --no-verify
-    
+```bash
+  Error: git pre-commit hook forbids committing lines with "debugger" to spec/features/test_spec.rb
+  --------------
+  To commit anyway, use --no-verify
+```
 
 Then, you can either remove the offending code or run `git commit --no-verify` to bypass the checks. Pretty great, huh?
 

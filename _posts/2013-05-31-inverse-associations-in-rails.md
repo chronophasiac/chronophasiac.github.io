@@ -12,15 +12,15 @@ Consider the following association:
 
 Now, imagine you did:
 
-{% highlight ruby %}
-    CrazyCatLady.first.cats.first
-{% endhighlight %}
+```ruby
+CrazyCatLady.first.cats.first
+```
 
 OK, this will query the database for the first CrazyCatLady, then query again for all cats associated with that record. Fair enough. But what if we do this:
 
-{% highlight ruby %}
-    CrazyCatLady.first.cats.first.crazy_cat_lady
-{% endhighlight %}
+```ruby
+CrazyCatLady.first.cats.first.crazy_cat_lady
+```
 
 Aside from being a bit silly, this does everything the first statement does, then queries the database a third time to find the CrazyCatLady associated with the first cat. But Rails already has this information! *Why* is it querying the database again?
 
@@ -30,9 +30,9 @@ Rails is a bit dumb about the inverse of an association. You have to specify tha
 
 With this done, when we issue:
 
-{% highlight ruby %}
-    CrazyCatLady.first.cats.first.crazy_cat_lady
-{% endhighlight %}
+```ruby
+CrazyCatLady.first.cats.first.crazy_cat_lady
+```
 
 We see that Rails won't query the database a third time. We've told Rails that it already knows about the cat's `crazy_cat_lady`.
 

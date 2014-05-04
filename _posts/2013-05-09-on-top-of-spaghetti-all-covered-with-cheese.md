@@ -1,9 +1,7 @@
 ---
 title: On Top of Spaghetti, All Covered With Cheese
-author: infotrope
 layout: post
-permalink: /2013/05/09/on-top-of-spaghetti-all-covered-with-cheese/
-categories:
+tags:
   - Programming
 ---
 > I say we take off and nuke the entire site from orbit. It's the only way to be sure.

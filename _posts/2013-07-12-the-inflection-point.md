@@ -1,9 +1,7 @@
 ---
 title: The Inflection Point
-author: infotrope
 layout: post
-permalink: /2013/07/12/the-inflection-point/
-categories:
+tags:
   - Development
 ---
 Something strange happened over the past 10 weeks at [Launch Academy][1]. Invisibly, imperceptibly, I've turned from a software hobbyist into a software developer. This fact only came to light a few days ago, and I'd like to share the story of how that happened.

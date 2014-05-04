@@ -1,9 +1,7 @@
 ---
 title: Automatically Prevent (Some) Bad Git Commits
-author: infotrope
 layout: post
-permalink: /2013/06/08/automatically-prevent-some-bad-git-commits/
-categories:
+tags:
   - Tools
 ---
 Some bad Git commits you can't prevent. I'm talking about the ugly, last-minute implementations that pass the test suite but will give you nightmares for days. Or commits with nasty bugs that will only reveal themselves days later on a corner case.

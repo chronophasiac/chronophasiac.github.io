@@ -1,9 +1,7 @@
 ---
 title: Unexhaustion
-author: infotrope
 layout: post
-permalink: /2013/05/06/unexhaustion/
-categories:
+tags:
   - Self Improvement
 ---
 We've all been there. It is late in the day. You're drained. You have a task that you *know* needs to get done, but every attempt to finish seems to get nowhere. You imagine all the work that lies ahead of you. If you're like me, you may start having negative thoughts about yourself. How do we recover from exhaustion?

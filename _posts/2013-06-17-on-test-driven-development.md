@@ -1,9 +1,7 @@
 ---
 title: On Test-driven Development
-author: infotrope
 layout: post
-permalink: /2013/06/17/on-test-driven-development/
-categories:
+tags:
   - Programming
 ---
 Here at [Launch Academy][1], test-driven development is a way of life. Every app we write, no matter how small, is expected to have excellent test coverage from the start. Further, we're expected to practice [outside in development][2]. Our cycle goes like this:

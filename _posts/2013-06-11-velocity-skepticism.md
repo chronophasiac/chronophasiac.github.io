@@ -1,9 +1,7 @@
 ---
 title: Velocity Skepticism
-author: infotrope
 layout: post
-permalink: /2013/06/11/velocity-skepticism/
-categories:
+tags:
   - Development
 ---
 [Velocity][1], in the [Agile][2] sense of the word, is a measurement of the number of user stories completed in a period of time. I'm very new to the concept, but I'm immediately skeptical for the following reasons:

@@ -1,9 +1,7 @@
 ---
 title: Teaching Ruby on Rails in Less Than Ten Hours
-author: infotrope
 layout: post
-permalink: /2013/06/22/teaching-ruby-on-rails-in-less-than-ten-hours/
-categories:
+tags:
   - Ruby on Rails
 ---
 Rails is complex. Really, *hideously* complex. Imagine all the individual parts that make up a car. Now imagine all those parts are one small component of a larger machine. That's how complex Rails is. So one would imagine that teaching Rails would entail teaching from the ground up. That is, introducing the principles of programming, followed by a study of each of the major parts of the stack, concluding with an examination of the way those parts interact. Traditionally, the process takes years. I'm enrolled in a [program][1] that's supposed to compress those years of material into ten weeks.

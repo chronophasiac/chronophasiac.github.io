@@ -1,9 +1,7 @@
 ---
 title: Mildly Complex Rails Seeding with YAML
-author: infotrope
 layout: post
-permalink: /2013/07/08/mildly-complex-seeding/
-categories:
+tags:
   - Ruby on Rails
 ---
 It's crunch time here at [Launch Academy][1]. Our projects have to be up and running with databases that will, you know, actually *show off* the functionality that we've worked 10 weeks to achieve. This means seeding, and depending on the complexity of our models and associations, seeding can go from a simple one-line script to, well, something like this:

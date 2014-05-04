@@ -1,9 +1,7 @@
 ---
 title: Subtle Rails Backend Gotchas
-author: infotrope
 layout: post
-permalink: /2013/06/05/subtle-rails-backend-gotchas/
-categories:
+tags:
   - Ruby on Rails
 ---
 *   **Presence validation in the model without a schema constraint.**  

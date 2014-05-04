@@ -1,9 +1,7 @@
 ---
 title: Getting Started with Backbone.js on Rails
-author: infotrope
 layout: post
-permalink: /2013/07/06/getting-started-with-backbone-js-on-rails/
-categories:
+tags:
   - JavaScript
   - Ruby on Rails
 ---

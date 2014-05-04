@@ -1,9 +1,7 @@
 ---
 title: Technical Interview Brainfreeze
-author: infotrope
 layout: post
-permalink: /2013/07/19/technical-interview-brainfreeze/
-categories:
+tags:
   - Self Improvement
 ---
 This week has been a job interview marathon. Tech interviews are an utterly different beast from the job interviews I'm used to. For one, they are **much** longer than non-technical interviews. Some companies have had me speak to half a dozen employees, from engineers to HR to management. The main differentiator, of course, is the technical portion of the interview itself.

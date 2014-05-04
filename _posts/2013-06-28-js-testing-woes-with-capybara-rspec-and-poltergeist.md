@@ -1,9 +1,7 @@
 ---
 title: JavaScript testing woes with Capybara, RSpec, and poltergeist
-author: infotrope
 layout: post
-permalink: /2013/06/28/js-testing-woes-with-capybara-rspec-and-poltergeist/
-categories:
+tags:
   - Ruby on Rails
 ---
 I've recently started acceptance testing my JavaScript, and it has been something of a rough ride. Using Capybara/RSpec with the poltergeist JS driver, I kept encountering seemingly random failures which nearly forced me to give up on acceptance testing my JS at all. In the end, I managed to work around the issues:

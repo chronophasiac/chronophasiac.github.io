@@ -1,9 +1,7 @@
 ---
 title: Tick-Tock Synthesis
-author: infotrope
 layout: post
-permalink: /2013/07/01/tick-tock-synthesis/
-categories:
+tags:
   - Self Improvement
 ---
 Synthesis is the phase of learning where we apply what we have learned in new ways. It is the point when we begin to understand how what we have learned connects with what we already know, and how those connections can be used to apply our new learning differently. I consider synthesis to be the most important part of my education at [Launch Academy][1], so I'm extremely deliberate in the way I approach synthesizing new knowledge.

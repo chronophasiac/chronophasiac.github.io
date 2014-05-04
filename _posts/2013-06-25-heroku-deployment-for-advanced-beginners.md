@@ -1,9 +1,7 @@
 ---
 title: Heroku Deployment for Advanced Beginners
-author: infotrope
 layout: post
-permalink: /2013/06/25/heroku-deployment-for-advanced-beginners/
-categories:
+tags:
   - Ruby on Rails
 ---
 You've deployed a couple Rails apps to Heroku. You know all about `heroku create` and `git push heroku master`. What's next?

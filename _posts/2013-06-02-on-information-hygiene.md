@@ -1,9 +1,7 @@
 ---
 title: On Information Hygiene
-author: infotrope
 layout: post
-permalink: /2013/06/02/on-information-hygiene/
-categories:
+tags:
   - Self Improvement
 ---
 As a developers-in-training at Launch Academy, we're constantly behind. Our inboxes are bursting with documentation, blog posts, and guides that need to be reviewed. We're required to split our time between coursework, our "breakable toy" main projects, and numerous side projects. *Simultaneously*, we're urged to engage with the wider community through social media and at meetups. This is why I've found it immensely useful to have solid support systems in place &#8211; what I call good information hygiene.

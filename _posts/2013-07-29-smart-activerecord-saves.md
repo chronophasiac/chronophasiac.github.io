@@ -1,9 +1,7 @@
 ---
 title: Smart ActiveRecord Saves
-author: infotrope
 layout: post
-permalink: /2013/07/29/smart-activerecord-saves/
-categories:
+tags:
   - Ruby on Rails
 ---
 Imagine you have the following models in a Rails app:

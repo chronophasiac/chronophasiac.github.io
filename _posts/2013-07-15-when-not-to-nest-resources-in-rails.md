@@ -1,9 +1,7 @@
 ---
 title: When (not) to Nest Resources in Rails
-author: infotrope
 layout: post
-permalink: /2013/07/15/when-not-to-nest-resources-in-rails/
-categories:
+tags:
   - Ruby on Rails
 ---
 In Rails, nested resources allow us to generate [RESTful][1] routes for heirarchical resources. If we were designing a blog, there might be a `posts` and a `comments` resource. We might have this in our `routes.rb`:

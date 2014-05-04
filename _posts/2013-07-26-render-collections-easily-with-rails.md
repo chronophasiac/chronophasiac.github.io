@@ -1,9 +1,7 @@
 ---
 title: Render Collections Easily With Rails
-author: infotrope
 layout: post
-permalink: /2013/07/26/render-collections-easily-with-rails/
-categories:
+tags:
   - Ruby on Rails
 ---
 A typical Rails [CRUD][1] app will have an index. The index will list a collection of resources, like blog posts. In our `index.html.erb` view, we might do this:

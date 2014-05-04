@@ -1,9 +1,7 @@
 ---
 title: Technical Interview Redux
-author: infotrope
 layout: post
-permalink: /2013/07/22/technical-interview-redux/
-categories:
+tags:
   - Self Improvement
 ---
 The job interview marathon continues, and consequently this will be a short one. But I feel that I omitted a critical, seemingly obvious piece of information in [my previous post][1]:

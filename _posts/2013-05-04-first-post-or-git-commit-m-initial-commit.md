@@ -1,9 +1,7 @@
 ---
 title: 'First post, or, git commit -m "Initial commit"'
-author: infotrope
 layout: post
-permalink: /2013/05/04/first-post-or-git-commit-m-initial-commit/
-categories:
+tags:
   - Meta
 ---
 > Politics isn’t about Policy

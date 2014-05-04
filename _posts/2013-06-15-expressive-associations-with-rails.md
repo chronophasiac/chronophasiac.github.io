@@ -1,9 +1,7 @@
 ---
 title: Expressive Associations with Rails
-author: infotrope
 layout: post
-permalink: /2013/06/15/expressive-associations-with-rails/
-categories:
+tags:
   - Ruby on Rails
 ---
 Suppose we have a suspiciously simple Rails blogging app with the following models:

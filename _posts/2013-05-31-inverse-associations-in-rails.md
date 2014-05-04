@@ -1,9 +1,7 @@
 ---
 title: Inverse Associations in Rails
-author: infotrope
 layout: post
-permalink: /2013/05/31/inverse-associations-in-rails/
-categories:
+tags:
   - Ruby on Rails
 ---
 Consider the following association:

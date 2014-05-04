@@ -1,9 +1,7 @@
 ---
 title: Validating Associations in Rails
-author: infotrope
 layout: post
-permalink: /2013/06/09/validating-associations-in-rails/
-categories:
+tags:
   - Ruby on Rails
 ---
 Validating our Rails associations can be a balancing act. Insufficient validation can lead to garbage in the database. Overzealous validation can lead to needless complexity. Here are a few lessons I've learned:

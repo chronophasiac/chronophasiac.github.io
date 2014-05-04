@@ -1,9 +1,7 @@
 ---
 title: Queuing and Scheduling in Rails with Delayed::Job
-author: infotrope
 layout: post
-permalink: /2013/08/14/queuing-and-scheduling-in-rails-with-delayedjob/
-categories:
+tags:
   - Ruby on Rails
 ---
 Rails has several popular options for queuing or scheduling tasks. When I was looking at the alternatives for my app [TimeVault][1] I was faced with something of a difficult choice. Two of the most popular libraries, [Resque][2] and [Sidekiq][3], require Redis. At the time, I didn't want to mess around with an additional component to deploy, so I used [Delayed::Job][4] instead.

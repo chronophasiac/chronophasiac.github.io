@@ -1,6 +1,7 @@
 ---
 title: JavaScript testing woes with Capybara, RSpec, and poltergeist
 layout: post
+comments: true
 tags:
   - Ruby on Rails
 ---

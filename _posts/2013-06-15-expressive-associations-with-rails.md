@@ -1,6 +1,7 @@
 ---
 title: Expressive Associations with Rails
 layout: post
+comments: true
 tags:
   - Ruby on Rails
 ---

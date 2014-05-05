@@ -1,6 +1,7 @@
 ---
 title: 'First post, or, git commit -m "Initial commit"'
 layout: post
+comments: true
 tags:
   - Meta
 ---

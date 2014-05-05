@@ -1,6 +1,7 @@
 ---
 title: Mildly Complex Rails Seeding with YAML
 layout: post
+comments: true
 tags:
   - Ruby on Rails
 ---

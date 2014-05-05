@@ -1,6 +1,7 @@
 ---
 title: On Top of Spaghetti, All Covered With Cheese
 layout: post
+comments: true
 tags:
   - Programming
 ---

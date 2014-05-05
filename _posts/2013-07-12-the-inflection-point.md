@@ -1,6 +1,7 @@
 ---
 title: The Inflection Point
 layout: post
+comments: true
 tags:
   - Development
 ---

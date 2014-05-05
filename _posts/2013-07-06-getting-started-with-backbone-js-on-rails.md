@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Backbone.js on Rails
 layout: post
+comments: true
 tags:
   - JavaScript
   - Ruby on Rails

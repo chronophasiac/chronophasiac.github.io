@@ -1,6 +1,7 @@
 ---
 title: Automatically Prevent (Some) Bad Git Commits
 layout: post
+comments: true
 tags:
   - Tools
 ---

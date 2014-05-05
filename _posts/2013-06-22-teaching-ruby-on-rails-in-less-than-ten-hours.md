@@ -1,6 +1,7 @@
 ---
 title: Teaching Ruby on Rails in Less Than Ten Hours
 layout: post
+comments: true
 tags:
   - Ruby on Rails
 ---

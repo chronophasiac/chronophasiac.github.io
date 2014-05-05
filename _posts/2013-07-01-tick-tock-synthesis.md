@@ -1,6 +1,7 @@
 ---
 title: Tick-Tock Synthesis
 layout: post
+comments: true
 tags:
   - Self Improvement
 ---

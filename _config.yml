@@ -1,4 +1,6 @@
+timezone: America/New_York
 markdown: redcarpet
+paginate: 5
 
 redcarpet:
   extensions: ['smart']

@@ -1,6 +1,7 @@
 ---
 title: On Test-driven Development
 layout: post
+comments: true
 tags:
   - Programming
 ---

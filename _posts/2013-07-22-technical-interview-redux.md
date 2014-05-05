@@ -1,6 +1,7 @@
 ---
 title: Technical Interview Redux
 layout: post
+comments: true
 tags:
   - Self Improvement
 ---

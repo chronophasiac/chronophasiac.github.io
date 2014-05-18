@@ -7,11 +7,11 @@ title: Mike Raimondi
   <p class="author">
     <span class="date">{{ post.date | date_to_long_string }}</span>
   </p>
-  <h4><a href="{{ post.url }}#disqus_thread"></a></h1>
+  <h4><a href="{{ post.url }}#disqus_thread"></a></h4>
   <div class="excerpt">
     {{ post.excerpt }}
   </div>
-  <h4><a href="{{ post.url }}">More</a></h1>
+  <h4><a href="{{ post.url }}">More</a></h4>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}

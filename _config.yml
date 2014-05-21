@@ -2,6 +2,15 @@ timezone: America/New_York
 markdown: redcarpet
 paginate: 5
 permalink: pretty
+exclude:
+  - node_modules
+  - scss
+  - Gruntfile.js
+  - bower.json
+  - package.json
+  - README.md
+  - CNAME
+  - Gemfile
 
 redcarpet:
   extensions: ['smart']

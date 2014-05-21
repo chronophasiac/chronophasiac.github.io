@@ -1,2 +1,5 @@
 _site/
 _drafts/
+/css/*
+/bower_components/*
+/node_modules/*

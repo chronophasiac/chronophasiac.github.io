@@ -1,7 +1,38 @@
 ---
 layout: default
 title: Mike Raimondi
+nav_active: home
 ---
+<div class="row">
+  <div class="large-12 columns">
+    <h2 class="hide-for-small" id="front-page-name"><span class="first-name">mike</span> <span class="last-name">raimondi</span></h2>
+    <h3 class="tagline subheader hide-for-small">full-stack web developer</h3>
+    <div class="tagline-small-container">
+      <h3 class="tagline-small subheader show-for-small">full-stack</h3>
+      <h3 class="tagline-small subheader show-for-small">web developer</h3>
+    </div>
+  </div>
+</div>
+<div class="row hide-for-small">
+  <div class="large-12 columns">
+    <ul class="button-group even-4 social">
+      <li><a class="button github-main-page icon-github-circled-1" href="https://github.com/chronophasiac" target="_blank">github</a></li>
+      <li><a class="button twitter-main-page icon-twitter" href="https://twitter.com/chronophasiac" target="_blank">twitter</a></li>
+      <li><a class="button linkedin-main-page icon-linkedin" href="http://www.linkedin.com/in/mikerraimondi" target="_blank">linkedin</a></li>
+      <li><a class="button facebook-main-page icon-facebook" href="https://www.facebook.com/chronophasiac" target="_blank">facebook</a></li>
+    </ul>
+  </div>
+</div>
+<div class="row show-for-small">
+  <div class="small-12 columns">
+    <ul class="button-group even-2 social">
+      <li><a class="button github-main-page icon-github-circled-1" href="https://github.com/chronophasiac" target="_blank">github</a></li>
+      <li><a class="button twitter-main-page icon-twitter" href="https://twitter.com/chronophasiac" target="_blank">twitter</a></li>
+      <li><a class="button linkedin-main-page icon-linkedin" href="http://www.linkedin.com/in/mikerraimondi" target="_blank">linkedin</a></li>
+      <li><a class="button facebook-main-page icon-facebook" href="https://www.facebook.com/chronophasiac" target="_blank">facebook</a></li>
+    </ul>
+  </div>
+</div>
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p class="author">

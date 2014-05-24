@@ -40,7 +40,9 @@
 
 // We use these to control various global styles
 // $body-bg: #fff;
+$body-bg: hsl(0, 0%, 13%);
 // $body-font-color: #222;
+$body-font-color: hsl(0, 0%, 100%);
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -54,7 +56,9 @@
 // $default-float: left;
 
 // We use these as default colors throughout
+$primary-color: hsl(0, 0%, 47%);
 // $primary-color: #008CBA;
+$secondary-color: hsl(0, 0%, 22%);
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -122,6 +126,7 @@
 // $header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
+$header-font-color: hsl(0, 0%, 75%);
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -138,6 +143,7 @@
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
 // $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+$subheader-font-color: darken($header-font-color, 30%);
 // $subheader-font-weight: normal;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;
@@ -745,6 +751,7 @@
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: #ccc;
 // $orbit-bullet-nav-color-active: #999;
+$orbit-bullet-nav-color-active: hsl(0, 0%, 27%);
 // $orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers
@@ -803,6 +810,7 @@
 
 // We use these to control the background and border styles
 // $panel-bg: scale-color(#fff, $lightness: -5%);
+$panel-bg: hsl(0, 0%, 7%);
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 
@@ -1169,6 +1177,7 @@
 
 // Background color for the top bar
 // $topbar-bg-color: #333;
+$topbar-bg: hsl(0, 0%, 6%);
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

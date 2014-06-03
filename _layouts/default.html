@@ -15,7 +15,11 @@
         {% unless page.nav_active == 'home' %}
           <li><a id="side-nav-name" href="/"><span class="first-name">mike</span> <span class="last-name">raimondi</span></a></li>
         {% endunless %}
-        <li class=""><a href="/about">about</a></li>
+        {% if page.nav_active == 'about' %}
+          <li class="active"><a href="/about">about</a></li>
+        {% else %}
+          <li><a href="/about">about</a></li>
+        {% endif %}
         <li class=""><a href="/portfolio">portfolio</a></li>
         <li class=""><a href="/resume">r&eacutesum&eacute</a></li>
         <li class=""><a href="/contact">contact</a></li>

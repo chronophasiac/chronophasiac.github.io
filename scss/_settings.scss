@@ -60,9 +60,13 @@ $primary-color: hsl(0, 0%, 47%);
 // $primary-color: #008CBA;
 $secondary-color: hsl(0, 0%, 22%);
 // $secondary-color: #e7e7e7;
+$alert-color: hsl(349, 67%, 57%);
 // $alert-color: #f04124;
+$success-color: hsl(153, 36%, 46%);
 // $success-color: #43AC6A;
+$warning-color: hsl(20, 85%, 58%);
 // $warning-color: #f08a24;
+$info-color: hsl(202, 62%, 41%);
 // $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
@@ -154,7 +158,9 @@ $subheader-font-color: darken($header-font-color, 30%);
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
+$paragraph-font-family: "Open Sans", "Helvetica", Helvetica, Arial, sans-serif;
 // $paragraph-font-weight: normal;
+$paragraph-font-weight: 300;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
@@ -165,6 +171,7 @@ $subheader-font-color: darken($header-font-color, 30%);
 
 // We use these to style <code> tags
 // $code-color: scale-color($alert-color, $lightness: -27%);
+$code-color: $body-font-color;
 // $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
 // $code-font-weight: bold;
 

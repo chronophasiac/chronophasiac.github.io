@@ -1,7 +1,7 @@
 @import "settings";
 @import "foundation";
-
-@import "pygments_monokai";
+@import "foundation-icons";
+@import "pygments-monokai";
 
 $blue: hsl(202, 62%, 41%);
 $green: hsl(153, 36%, 46%);
@@ -44,7 +44,7 @@ ul.side-nav-home {
 nav.side-nav li {
   a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3em; 
+    font-size: 1.3em;
     &:hover {
       color: hsl(0, 0%, 65%);
     }
@@ -112,12 +112,11 @@ ul.social {
   margin: 50px 0;
   li {
     a {
-      box-shadow: none;
-      border: 3px solid hsl(0, 0%, 13%);
+      border: 3px solid hsl(0, 0%, 13%) !important;
       font-family: 'Ubuntu', sans-serif;
       font-weight: 400;
       white-space: nowrap;
-      margin-bottom: 0;
+      margin: 3px;
     }
     a.facebook-main-page {
       background-color: $blue;
@@ -278,16 +277,15 @@ div#portfolio-container {
   }
 }
 
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  // color:#333;
-  font-size:12px;
+div.post {
+  padding: 50px;
+}
+
+pre code {
+  font-size: 0.7rem;
 }
 
 pre {
-  padding:8px 15px;
-  // background: #f8f8f8;  
-  // border-radius: 3px;
-  // border:1px solid #e5e5e5;
+  padding: 8px 15px;
   overflow-x: auto;
 }

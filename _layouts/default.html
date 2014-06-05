@@ -23,6 +23,14 @@
         <li class=""><a href="/portfolio">portfolio</a></li>
         <li class=""><a href="/resume">r&eacutesum&eacute</a></li>
         <li class=""><a href="/contact">contact</a></li>
+        {% unless page.nav_active == 'home' %}
+          <div class="social">
+            <li><a class="button expand github-main-page" href="https://github.com/chronophasiac" target="_blank"><i class="fi-social-github"></i>github</a></li>
+            <li><a class="button expand twitter-main-page" href="https://twitter.com/chronophasiac" target="_blank"><i class="fi-social-twitter"></i>twitter</a></li>
+            <li><a class="button expand linkedin-main-page" href="http://www.linkedin.com/in/mikerraimondi" target="_blank"><i class="fi-social-linkedin"></i>linkedin</a></li>
+            <li><a class="button expand facebook-main-page" href="https://www.facebook.com/chronophasiac" target="_blank"><i class="fi-social-facebook"></i>facebook</a></li>
+          </ul>
+        {% endunless %}
       </nav>
     </div>
     <nav class="show-for-medium-down top-bar">

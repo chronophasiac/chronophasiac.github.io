@@ -4,6 +4,7 @@ layout: post
 comments: true
 tags:
   - Ruby on Rails
+excerpt: <p>We can leverage ActiveRecord's intelligence to minimize database requests.</p>
 ---
 Imagine you have the following models in a Rails app:
 

@@ -7,7 +7,75 @@ tags:
 ---
 It's crunch time here at [Launch Academy][1]. Our projects have to be up and running with databases that will, you know, actually *show off* the functionality that we've worked 10 weeks to achieve. This means seeding, and depending on the complexity of our models and associations, seeding can go from a simple one-line script to, well, something like this:
 
-{% gist 5954150 %}
+```ruby
+module Seeders
+  module Lessons
+    class << self
+      def seed
+        Lesson.destroy_all
+        lessons = []
+
+        base_path = 'db/seed_data'
+        Dir.glob(Rails.root.join(base_path, 'lessons', '*.yml')) do |file|
+          lesson = YAML.load_file(file)
+          this_lesson = Lesson.create(title: lesson['title'], summary: lesson['summary'])
+          lessons << this_lesson
+          lesson['activities'].each_with_index do |activity, index|
+            completable = []
+
+            if activity['type'] == 'Assignment'
+              completable = Assignment.create do |assignment|
+                assignment.title = activity['title']
+                assignment.summary = activity['summary']
+                assignment.instructions = activity['instructions']
+                assignment.url = activity['url']
+                assignment.assignment_type = activity['assignment_type']
+              end
+            elsif activity['type'] == 'Challenge'
+              completable = Challenge.create do |challenge|
+                challenge.title = activity['title']
+              end
+              activity['cards'].each do |card|
+                new_card = Card.create do |c|
+                  c.title = card['title']
+                  c.instructions = card['instructions']
+                  c.problem = card['problem']
+                  c.solution_type = card['solution_type']
+                  c.snippet = card['snippet'] if card['snippet'].present?
+                end
+                card['solutions'].each do |solution|
+
+                  if card['solution_type'] == 'string'
+                    sol = new_card.solution_strings.create do |solution_string|
+                      solution_string.regex = solution['regex']
+                      solution_string.canonical = true if solution['canonical']
+                    end
+                  elsif card['solution_type'] == 'position'
+                    sol = new_card.solution_positions.create do |solution_position|
+                      solution_position.start_position = solution['start_position']
+                      solution_position.end_position = solution['end_position']
+                    end
+                  end
+
+                  completable.cards << new_card
+                end
+              end
+            end
+
+            Activity.create do |lesson_activity|
+              lesson_activity.completable = completable
+              lesson_activity.lesson = this_lesson
+              lesson_activity.position = index + 1
+            end
+          end
+        end
+
+        lessons
+      end
+    end
+  end
+end
+```
 
 This is the seeder for my project: [Memworks][2]. A major part of the app is lessons, each of which has assignments and challenges. There's a lot of content, and my first approach was to just shove it all in big Ruby objects and `require` the relevant source files. I decided to shift to a [YAML][3] approach when the Ruby hashes became so large as to become unwieldy.
 

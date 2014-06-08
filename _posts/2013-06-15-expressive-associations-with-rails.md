@@ -7,9 +7,23 @@ tags:
 ---
 Suppose we have a suspiciously simple Rails blogging app with the following models:
 
-{% gist 5786823 %}
+```ruby
+class User < ActiveRecord::Base
+  has_many  :posts,
+            inverse_of: :user
 
-{% gist 5786829 %}
+  attr_accessible :name, :email
+end
+```
+
+```ruby
+class Post < ActiveRecord::Base
+  belongs_to  :user,
+              inverse_of: :posts
+
+  attr_accessible :body, :title
+end
+```
 
 This done, we could issue:
 
@@ -20,9 +34,26 @@ new_post = user.posts.create
 
 Then, when we call `new_post.user`, we are returned `new_user`. Great! Well&#8230;actually this is OK, but the association could be more explicit about the relationship between Users and Posts. Rails associations allow us to define custom names, like so:
 
-{% gist 5786858 %}
+```ruby
+class User < ActiveRecord::Base
+  has_many  :posts,
+            foreign_key: 'author_id',
+            inverse_of: :author
 
-{% gist 5786861 %}
+  attr_accessible :name, :email
+end
+```
+
+```ruby
+class Post < ActiveRecord::Base
+  belongs_to  :author,
+              class_name: 'User',
+              foreign_key: 'author_id',
+              inverse_of: :posts
+
+  attr_accessible :body, :title
+end
+```
 
 We'll also update our database schema, changing the foreign key in `posts` from `user_id` to `author_id`. Then we'll `rake db:rollback db:migrate`. Now, when we perform the same setup:
 

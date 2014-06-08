@@ -21,7 +21,23 @@ At this point, I thought I had the problem solved.
 
 Tests were still failing with ActiveRecord `not found` exceptions. Less frequently, but still enough to ruin the utility of my test suite. After much trial and error, I added a single line to the database_cleaner config in the reply above, and it appears to actually *work*. Here's my `database_cleaner.rb`:
 
-{% gist 5889100 %}
+```ruby
+RSpec.configure do |config|
+  config.before(:suite) do
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.strategy = Capybara.current_driver == :rack_test ? :transaction : :truncation
+    DatabaseCleaner.clean
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
+end
+```
 
 Hopefully this helps some folks looking to use Capybara to test their JavaScript
 

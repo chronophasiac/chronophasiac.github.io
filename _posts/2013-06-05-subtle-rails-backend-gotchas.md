@@ -20,7 +20,7 @@ tags:
 
     It simply checks that the attribute is not nil or blank (whitespace). Having presence validated is great, because it frees us from having to nil check any methods that consume our validated attributes.
 
-    But what if a future contributor removes that presence validation? Any business logic we've written that depends on our validated attributes might now explode. We can avert a potential disaster by adding `null: false` to the migration, on any attribute that has presence validated:
+    But what if a future contributor removes that presence validation? <span id="more"></span>Any business logic we've written that depends on our validated attributes might now explode. We can avert a potential disaster by adding `null: false` to the migration, on any attribute that has presence validated:
 
     ```ruby
     class CrazyCatLady < ActiveRecord::Base

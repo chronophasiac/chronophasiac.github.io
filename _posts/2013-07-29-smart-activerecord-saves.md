@@ -4,7 +4,6 @@ layout: post
 comments: true
 tags:
   - Ruby on Rails
-excerpt: <p>We can leverage ActiveRecord's intelligence to minimize database requests.</p>
 ---
 Imagine you have the following models in a Rails app:
 
@@ -25,7 +24,7 @@ car = Car.create
 4.times { car.wheels.create }
 ```
 
-What if we want to save the car and its wheels to the database as a single [transaction][1]? This might be important if we never want a car to be saved to the database without wheels. Makes sense, right? Here's how we could do that:
+What if we want to save the car and its wheels to the database as a single [transaction][1]?<span id="more"></span> This might be important if we never want a car to be saved to the database without wheels. Makes sense, right? Here's how we could do that:
 
 ```ruby
 car = Car.new

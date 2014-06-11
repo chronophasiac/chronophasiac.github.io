@@ -78,6 +78,7 @@ end
 ```
 
 This is the seeder for my project: [Memworks][2]. A major part of the app is lessons, each of which has assignments and challenges. There's a lot of content, and my first approach was to just shove it all in big Ruby objects and `require` the relevant source files. I decided to shift to a [YAML][3] approach when the Ruby hashes became so large as to become unwieldy.
+<span id="more"></span>
 
 Since YAML supports arrays, we can leverage this to indicate associations in our models. Memworks lessons are YAML files with a structure like this:
 

@@ -12,6 +12,7 @@ Here at [Launch Academy][1], test-driven development is a way of life. Every app
 *   Code a failing acceptance test (a script based on an acceptance criteria which emulate user input and watches for a desired output)
 *   Write a failing unit test (a program that tests a component required to meet the acceptance criteria)
 *   Implement (actual programming. Yay!)
+<span id="more"></span>
 
 During implementation, our goal is to get our failing unit test to pass. After it is passing, we refactor the unit test and our implementation. Once complete, we can take one step up the chain and write another failing unit test. We bounce back and forth between unit testing and implementation until all the pieces are in place to implement our failing acceptance test. After passing the acceptance test and refactoring, we can proceed to the next acceptance criteria and proceed *back* down the chain. Only after we've iterated through all the acceptance criteria, can we consider the user story (and the feature) implemented.
 

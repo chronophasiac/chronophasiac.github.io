@@ -6,6 +6,7 @@ tags:
   - Self Improvement
 ---
 Synthesis is the phase of learning where we apply what we have learned in new ways. It is the point when we begin to understand how what we have learned connects with what we already know, and how those connections can be used to apply our new learning differently. I consider synthesis to be the most important part of my education at [Launch Academy][1], so I'm extremely deliberate in the way I approach synthesizing new knowledge.
+<span id="more"></span>
 
 My approach can be compared with Intel's famous ["Tick-Tock" methodology][2]. Every year, Intel with either "tick" by shrinking the size of the transistors on their processors, or they will "tock" by introducing a new architecture. The tick-tock approach limits the novelty, and hence the complexity, of each iteration.
 

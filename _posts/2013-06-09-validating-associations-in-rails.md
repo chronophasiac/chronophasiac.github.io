@@ -38,6 +38,7 @@ Validating our Rails associations can be a balancing act. Insufficient validatio
     ```
 
     Why aren't we also validating `presence_of` the foreign key (`crazy_cat_lady_id`)? We'll see in a moment.
+    <span id="more"></span>
 
 *   **Use not null constraints for foreign keys**. Since we're validating presence of the `crazy_cat_lady` on a `cat`, we should also make sure that a foreign key is present on the `cat` database entry. In this case, the foreign key is just the primary key (the `id`) of a `crazy_cat_lady` that is stored with a `cat`, to let Rails know where the association is stored.  
     We *could* do this in the `Cat` model:

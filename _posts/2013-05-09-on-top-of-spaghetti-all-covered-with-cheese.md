@@ -6,12 +6,13 @@ tags:
   - Programming
 ---
 > I say we take off and nuke the entire site from orbit. It's the only way to be sure.
-> 
-> — <cite><a href="http://www.imdb.com/title/tt0090605/?ref_=sr_2">Ellen Ripley</a></cite>
+>
+> <cite><a href="http://www.imdb.com/title/tt0090605/?ref_=sr_2">Ellen Ripley</a></cite>
 
 You thought implementing the code would be relatively easy. You thought you could bang it out in an hour and be done. You thought you'd make it home on time today. You were wrong.
 
 And now, you've got a big heaping plate of spaghetti code in front of you. That is, your code is massively interdependent and there is no clear way forward to testing small, understandable parts of the code. How did you get in this mess? What would prevent it from happening again? And how the heck are you going to fix all this barely intelligible code?
+<span id="more"></span>
 
 The temptation to rework spaghetti code is strong. It is a perfect example of the [sunk cost fallacy][1], where we "throw good money after bad" and dig ourselves deeper into holes of time debt. The more time we invest in bad code, the more we may feel obligated to "make it right".
 

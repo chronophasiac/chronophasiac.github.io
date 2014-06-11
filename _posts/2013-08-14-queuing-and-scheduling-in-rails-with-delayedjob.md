@@ -6,6 +6,7 @@ tags:
   - Ruby on Rails
 ---
 Rails has several popular options for queuing or scheduling tasks. When I was looking at the alternatives for my app [TimeVault][1] I was faced with something of a difficult choice. Two of the most popular libraries, [Resque][2] and [Sidekiq][3], require Redis. At the time, I didn't want to mess around with an additional component to deploy, so I used [Delayed::Job][4] instead.
+<span id="more"></span>
 
 Delayed::Job (DJ) supports [multiple backends][5]. Most importantly for our purposes, it has solid support for ActiveRecord. There are performance reasons for choosing Redis over ActiveRecord, but for a small learning app these are typically safe to ignore.
 

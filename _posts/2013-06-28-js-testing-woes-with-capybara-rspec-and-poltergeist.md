@@ -8,6 +8,7 @@ tags:
 I've recently started acceptance testing my JavaScript, and it has been something of a rough ride. Using Capybara/RSpec with the poltergeist JS driver, I kept encountering seemingly random failures which nearly forced me to give up on acceptance testing my JS at all. In the end, I managed to work around the issues:
 
 With the help of an [excellent post][1] by Avdi Grimm, I installed [database_cleaner][2] and configured it to work in the Capybara/poltergeist environment. However, this led to issues where tests didn't seem to be properly cleaning up after themselves.
+<span id="more"></span>
 
 Thanks to [this reply][3] I tracked down the problem to a bug in RSpec 2.13. **If you are going to use database_cleaner with Capybara/poltergeist, make sure you are using RSpec >= 2.14.0.rc1**. For my Rails app, this is what I put in my `Gemfile`:
 

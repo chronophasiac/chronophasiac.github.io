@@ -13,7 +13,7 @@ A typical Rails [CRUD][1] app will have an index. The index will list a collecti
 <% end %>
 ```
 
-This will list out the titles for each of our blog posts. However, there is a more elegant way which leverages Rails' defaults. If we instead do this:
+This will list out the titles for each of our blog posts. However, there is a more elegant way which leverages Rails' defaults.<span id="more"></span> If we instead do this:
 
 ```erb
 <%= render @posts %>

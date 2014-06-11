@@ -6,6 +6,7 @@ tags:
   - Self Improvement
 ---
 This week has been a job interview marathon. Tech interviews are an utterly different beast from the job interviews I'm used to. For one, they are **much** longer than non-technical interviews. Some companies have had me speak to half a dozen employees, from engineers to HR to management. The main differentiator, of course, is the technical portion of the interview itself.
+<span id="more"></span>
 
 Technical questions in the interview setting can be extremely tricky. Typically I'm already a bit edgy from meeting so many new people, and the additional mental strain of being so highly invested in a positive outcome is just too much. My creative faculties seem to just shut down, and when I'm faced with a challenging question and no creative juices it leads to a panic response. I'm desperately reaching out for resources that *should* be there, but in the interview room there's...nothing. It is disconcerting, to say the least.
 

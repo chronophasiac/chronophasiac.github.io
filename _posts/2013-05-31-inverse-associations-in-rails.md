@@ -7,7 +7,15 @@ tags:
 ---
 Consider the following association:
 
+```ruby
+class CrazyCatLady < ActiveRecord::Base
+  has_many :cats
+end
 
+class Cat < ActiveRecord::Base
+  belongs_to :crazy_cat_lady
+end
+```
 
 Now, imagine you did:
 
@@ -22,6 +30,7 @@ CrazyCatLady.first.cats.first.crazy_cat_lady
 ```
 
 Aside from being a bit silly, this does everything the first statement does, then queries the database a third time to find the CrazyCatLady associated with the first cat. But Rails already has this information! *Why* is it querying the database again?
+<span id="more"></span>
 
 Rails is a bit dumb about the inverse of an association. You have to specify that an inverse relationship exists, like so:
 

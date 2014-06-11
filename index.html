@@ -36,12 +36,13 @@ nav_active: home
 {% for post in paginator.posts %}
   <div class="row post-index">
     <h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class="excerpt">
-      {{ post.excerpt }}
-    </div>
     <p class="author">
       <span class="date">{{ post.date | date_to_long_string }}</span>
     </p>
+    <div class="excerpt">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ post.url }}/#more">[More]</a>
     <hr>
   </div>
 {% endfor %}

@@ -6,6 +6,7 @@ tags:
   - Self Improvement
 ---
 We've all been there. It is late in the day. You're drained. You have a task that you *know* needs to get done, but every attempt to finish seems to get nowhere. You imagine all the work that lies ahead of you. If you're like me, you may start having negative thoughts about yourself. How do we recover from exhaustion?
+<span id="more"></span>
 
 <div style="float: right" about='http://farm9.static.flickr.com/8084/8328132294_47ef227dfe_m.jpg'>
   <a href='http://www.flickr.com/photos/archivist/8328132294/' target='_blank'><img xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/StillImage' rel='dct:type' src='http://farm9.static.flickr.com/8084/8328132294_47ef227dfe_m.jpg' alt='Sleepy Friends... by subtlemd, on Flickr' title='Sleepy Friends... by subtlemd, on Flickr' border='0' /></a><br /><a rel='license' href='http://creativecommons.org/licenses/by-sa/2.0/' target='_blank'><img src='http://i.creativecommons.org/l/by-sa/2.0/80x15.png' alt='Creative Commons Attribution-Share Alike 2.0 Generic License' title='Creative Commons Attribution-Share Alike 2.0 Generic License' border='0' align='left' /></a>&nbsp;&nbsp;by&nbsp;<a href='http://www.flickr.com/people/archivist/' target='_blank'>&nbsp;</a><a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='http://www.flickr.com/people/archivist/' target='_blank'>subtlemd</a><a href='http://www.imagecodr.org/' target='_blank'>&nbsp;</a>

@@ -32,7 +32,7 @@ new_user = User.create
 new_post = user.posts.create
 ```
 
-Then, when we call `new_post.user`, we are returned `new_user`. Great! Well&#8230;actually this is OK, but the association could be more explicit about the relationship between Users and Posts. Rails associations allow us to define custom names, like so:
+Then, when we call `new_post.user`, we are returned `new_user`. Great! Well&#8230;actually this is OK, but the association could be more explicit about the relationship between Users and Posts.<span id="more"></span> Rails associations allow us to define custom names, like so:
 
 ```ruby
 class User < ActiveRecord::Base

@@ -8,6 +8,7 @@ tags:
 Some bad Git commits you can't prevent. I'm talking about the ugly, last-minute implementations that pass the test suite but will give you nightmares for days. Or commits with nasty bugs that will only reveal themselves days later on a corner case.
 
 Some bad commits, though, you absolutely can prevent. And there's a way to automatically prevent them, every time you invoke `git commit`: [Git hooks][1].
+<span id="more"></span>
 
 <div style="float:right; padding:10px" about='http://farm7.static.flickr.com/6003/5983674326_98267a75dd_m.jpg'>
   <a href='http://www.flickr.com/photos/nomadic_lass/5983674326/' target='_blank'><img xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/StillImage' rel='dct:type' src='http://farm7.static.flickr.com/6003/5983674326_98267a75dd_m.jpg' alt='Hooked by Nomadic Lass, on Flickr' title='Hooked by Nomadic Lass, on Flickr' border='0' /></a><br /><a rel='license' href='http://creativecommons.org/licenses/by-sa/2.0/' target='_blank'><img src='http://i.creativecommons.org/l/by-sa/2.0/80x15.png' alt='Creative Commons Attribution-Share Alike 2.0 Generic License' title='Creative Commons Attribution-Share Alike 2.0 Generic License' border='0' align='left' /></a>&nbsp;&nbsp;by&nbsp;<a href='http://www.flickr.com/people/nomadic_lass/' target='_blank'>&nbsp;</a><a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='http://www.flickr.com/people/nomadic_lass/' target='_blank'>Nomadic Lass</a><a href='http://www.imagecodr.org/' target='_blank'>&nbsp;</a>

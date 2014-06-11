@@ -2,6 +2,7 @@ timezone: America/New_York
 markdown: redcarpet
 paginate: 5
 permalink: pretty
+excerpt_separator: <span id="more"></span>
 exclude:
   - node_modules
   - scss

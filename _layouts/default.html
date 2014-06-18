@@ -10,7 +10,7 @@
     <script>
       WebFont.load({
         google: {
-          families: ['Ubuntu', 'Open Sans:300,400,600', 'Inconsolata:400,700']
+          families: ['Ubuntu', 'Open Sans:300italic,300,400,600', 'Inconsolata:400']
         }
       });
     </script>
@@ -27,16 +27,20 @@
         {% else %}
           <li><a href="/about">about</a></li>
         {% endif %}
-        <li class=""><a href="/portfolio">portfolio</a></li>
-        <li class=""><a href="/resume">r&eacutesum&eacute</a></li>
-        <li class=""><a href="/contact">contact</a></li>
+        {% if page.nav_active == 'contact' %}
+          <li class="active"><a href="/contact">contact</a></li>
+        {% else %}
+          <li><a href="/contact">contact</a></li>
+        {% endif %}
         {% unless page.nav_active == 'home' %}
-          <div class="social">
-            <li><a class="button expand github-main-page" href="https://github.com/chronophasiac" target="_blank"><i class="fi-social-github"></i>github</a></li>
-            <li><a class="button expand twitter-main-page" href="https://twitter.com/chronophasiac" target="_blank"><i class="fi-social-twitter"></i>twitter</a></li>
-            <li><a class="button expand linkedin-main-page" href="http://www.linkedin.com/in/mikerraimondi" target="_blank"><i class="fi-social-linkedin"></i>linkedin</a></li>
-            <li><a class="button expand facebook-main-page" href="https://www.facebook.com/chronophasiac" target="_blank"><i class="fi-social-facebook"></i>facebook</a></li>
-          </ul>
+          <li>
+            <ul class="button-group even-2 social">
+              <li><a class="button expand github-main-page" href="https://github.com/chronophasiac" target="_blank"><i class="fi-social-github"></i></a></li>
+              <li><a class="button expand twitter-main-page" href="https://twitter.com/chronophasiac" target="_blank"><i class="fi-social-twitter"></i></a></li>
+              <li><a class="button expand linkedin-main-page" href="http://www.linkedin.com/in/mikerraimondi" target="_blank"><i class="fi-social-linkedin"></i></a></li>
+              <li><a class="button expand facebook-main-page" href="https://www.facebook.com/chronophasiac" target="_blank"><i class="fi-social-facebook"></i></a></li>
+            </ul>
+          </li>
         {% endunless %}
       </nav>
     </div>
@@ -75,12 +79,7 @@
     </div>
   </div>
   <footer class="row">
-    <div class="small-5 columns">
-      <h4 class="footer-name">mike raimondi</h4>
-    </div>
-    <div class="small-7 columns">
-      <h4 class="footer-email"><span class="email-footer-part">mike</span>at<span class="email-footer-part">mikeraimondi</span>dot<span class="email-footer-part">com</span></h4>
-    </div>
+    <h4 class="footer-email"><span class="email-footer-part">mike</span>at<span class="email-footer-part">mikeraimondi</span>dot<span class="email-footer-part">com</span></h4>
   </footer>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/foundation/js/foundation.min.js"></script>

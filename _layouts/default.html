@@ -19,20 +19,12 @@
   <div class="row">
     <div class="hide-for-medium-down large-3 columns">
       <nav class="side-nav">
-        {% unless page.nav_active == 'home' %}
+        {% unless page.home_active == 'active' %}
           <li><a id="side-nav-name" href="/"><span class="first-name">mike</span> <span class="last-name">raimondi</span></a></li>
         {% endunless %}
-        {% if page.nav_active == 'about' %}
-          <li class="active"><a href="/about">about</a></li>
-        {% else %}
-          <li><a href="/about">about</a></li>
-        {% endif %}
-        {% if page.nav_active == 'contact' %}
-          <li class="active"><a href="/contact">contact</a></li>
-        {% else %}
-          <li><a href="/contact">contact</a></li>
-        {% endif %}
-        {% unless page.nav_active == 'home' %}
+        <li class="{{ page.about_active }}"><a href="/about">about</a></li>
+        <li class="{{ page.contact_active }}"><a href="/contact">contact</a></li>
+        {% unless page.home_active == 'active' %}
           <li>
             <ul class="button-group even-2 social">
               <li><a class="button expand github-main-page" href="https://github.com/chronophasiac" target="_blank"><i class="fi-social-github"></i></a></li>

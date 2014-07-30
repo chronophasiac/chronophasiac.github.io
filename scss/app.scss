@@ -1,7 +1,7 @@
-@import "settings";
-@import "foundation";
-@import "foundation-icons";
-@import "pygments-zenburn";
+@import 'settings';
+@import 'foundation';
+@import 'foundation-icons';
+@import 'pygments-zenburn';
 
 $blue: hsl(202, 62%, 41%);
 $green: hsl(153, 36%, 46%);
@@ -9,14 +9,16 @@ $red: hsl(349, 67%, 57%);
 $orange: hsl(20, 85%, 58%);
 $purple: hsl(259, 95%, 59%);
 
-h2#front-page-name {
+#front-page-name {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.6em;
   margin-bottom: 0;
+
   .first-name {
     font-weight: 300;
     color: hsl(0, 0%, 27%);
   }
+
   .last-name {
     color: hsl(0, 0%, 74%);
     font-weight: 600;
@@ -33,6 +35,7 @@ h3.tagline {
 div.tagline-small-container {
   position: relative;
   bottom: 10px;
+
   h3.tagline-small {
     margin: 0;
   }
@@ -41,31 +44,38 @@ div.tagline-small-container {
 ul.side-nav-home {
   margin-top: 42px;
 }
+
 nav.side-nav li {
   a {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
+
     &:hover {
       color: hsl(0, 0%, 65%);
     }
   }
 
-  a#side-nav-name {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.65em;
-    .first-name {
-      font-weight: 300;
-      color: hsl(0, 0%, 27%);
-    }
-    .last-name {
-      font-weight: 600;
-      color: hsl(0, 0%, 74%);
+#side-nav-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.65em;
+
+  .first-name {
+    font-weight: 300;
+    color: hsl(0, 0%, 27%);
+  }
+
+  .last-name {
+    font-weight: 600;
+    color: hsl(0, 0%, 74%);
     }
   }
+
   ul.social li {
     margin-bottom: 0;
+
     a {
       margin-bottom: 0;
+
       i {
         font-size: 1.8em;
       }
@@ -75,25 +85,31 @@ nav.side-nav li {
 
 nav.top-bar {
   margin-bottom: 10px;
-  a#top-nav-name {
+
+  #top-nav-name {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.45em;
     white-space: nowrap;
+
     .first-name {
       font-weight: 300;
       color: hsl(0, 0%, 27%);
     }
+
     .last-name {
       font-weight: 600;
       color: hsl(0, 0%, 77%);
     }
   }
+
   @media only screen and (max-width: 940px) {
     ul.top-nav-menu {
       margin: 10px 0;
+
       li {
         vertical-align: middle;
         font-size: 1.1em;
+
         a {
           background-color: hsl(0, 0%, 13%);
           padding: 25px 0;
@@ -105,10 +121,11 @@ nav.top-bar {
         }
       }
     }
+
     ul.left li a {
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
-      font-size: 0.9em;
+      font-size: .9em;
     }
   }
 }
@@ -119,6 +136,7 @@ ul.vcard {
 
 .social {
   margin: 50px 0;
+
   li {
     a {
       border: 3px solid hsl(0, 0%, 13%) !important;
@@ -126,31 +144,40 @@ ul.vcard {
       font-weight: 400;
       white-space: nowrap;
       margin: 3px;
+
       i {
         font-size: 1.3em;
         margin-right: 5px;
       }
     }
+
     a.facebook-main-page {
       background-color: $blue;
+
       &:hover {
         background-color: darken($blue, 7%);
       }
     }
+
     a.github-main-page {
       background-color: $green;
+
       &:hover {
         background-color: darken($green, 7%);
       }
     }
+
     a.twitter-main-page {
       background-color: $red;
+
       &:hover {
         background-color: darken($red, 7%);
       }
     }
+
     a.linkedin-main-page {
       background-color: $orange;
+
       &:hover {
         background-color: darken($orange, 7%);
       }
@@ -168,12 +195,13 @@ div.orbit-slide-number {
 }
 
 footer {
-  h4{
+  h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     // font-size: 1.1em;
     &.footer-email {
       text-align: right;
+
       span.email-footer-part {
         font-weight: 400;
       }
@@ -182,7 +210,7 @@ footer {
 }
 
 
-section#about-me {
+#about-me {
   header {
     h3 {
       color: $orange;
@@ -191,28 +219,36 @@ section#about-me {
       padding-bottom: 10px;
     }
   }
+
   #self-portrait {
     margin: 20px;
   }
+
   #small-self-portrait {
     margin: 20px 0;
   }
+
   h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
   }
+
   #first-subheader {
     color: $green;
   }
+
   #second-subheader {
     color: $blue;
   }
+
   #third-subheader {
     color: $red;
   }
+
   #fourth-subheader {
     color: $purple;
   }
+
   blockquote {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -225,7 +261,7 @@ section#about-me {
   font-weight: 300;
   white-space: nowrap;
   margin-bottom: 0;
-  border: none;
+  border: 0;
 }
 
 @mixin port-link {
@@ -233,21 +269,26 @@ section#about-me {
     @include port-btn;
     background-color: $blue;
   }
+
   a.port-green {
     @include port-btn;
     background-color: $green;
   }
+
   a.nolink-port-green {
     color: $green;
   }
+
   a.port-orange {
     @include port-btn;
     background-color: $orange;
   }
+
   a.port-red {
     @include port-btn;
     background-color: $red;
   }
+
   a.port-purple {
     @include port-btn;
     background-color: $purple;
@@ -258,32 +299,38 @@ input.port-filter-btn {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
-div#portfolio-container {
+
+#portfolio-container {
   h5 {
-    color: white;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
   }
+
   h6 {
-    color: white;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
   }
+
   div.portfolio-item {
     padding: 1em;
     @include port-link;
     margin: 3px;
-    background-color: black;
+    background-color: #000;
   }
+
   div.small-item {
     font-size: 90%;
     width: 160px;
     height: 160px;
   }
+
   div.medium-item {
     width: 326px;
     height: 160px;
   }
+
   div.large-item {
     width: 326px;
     height: 326px;
@@ -305,8 +352,9 @@ pre {
   margin-bottom: rem-calc(20);
   padding: 10px;
   overflow-x: auto;
+
   code {
-    border: none;
+    border: 0;
     line-height: 1.3;
     padding: 0;
   }

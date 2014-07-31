@@ -1,5 +1,20 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "chronophasiac.github.io",
+  "version": "1.0.0",
+  "homepage": "https://github.com/chronophasiac/chronophasiac.github.io",
+  "authors": [
+    "Michael Raimondi <zeno@pobox.com>"
+  ],
+  "description": "Personal site of Mike Raimondi",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "foundation": "zurb/bower-foundation"
   }

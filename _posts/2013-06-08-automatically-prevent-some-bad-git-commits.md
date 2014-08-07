@@ -23,7 +23,7 @@ Bob Gilmore has an <a href="https://github.com/bobgilmore/githooks" rel="nofollo
 *   Strings like `PRIVATE KEY` that might mean you've accidentally committed your private SSH key. Oops.
 *   Various other logging and debugging calls that you usually don't want in production code.
 
-I've <a href="https://github.com/chronophasiac/githooks" rel="nofollow">forked the project</a> to add a couple of nasty little buggers that I certainly have never, ever committed, no sir:
+I've <a href="https://github.com/mikeraimondi/githooks" rel="nofollow">forked the project</a> to add a couple of nasty little buggers that I certainly have never, ever committed, no sir:
 
 *   [Launchy][2] `save_and_open_page` calls
 *   [Ruby debugger][3] calls
@@ -45,5 +45,5 @@ Then, you can either remove the offending code or run `git commit --no-verify` t
 [1]: http://git-scm.com/book/en/Customizing-Git-Git-Hooks
 [2]: http://rubygems.org/gems/launchy
 [3]: https://github.com/cldwalker/debugger
-[4]: https://github.com/chronophasiac/githooks
+[4]: https://github.com/mikeraimondi/githooks
 [5]: https://github.com/bobgilmore/githooks

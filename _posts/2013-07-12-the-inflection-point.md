@@ -19,4 +19,4 @@ As someone who loves to build things, I cannot adequately express the value of w
 [1]: http://www.launchacademy.com/
 [2]: http://www.memworks.com/
 [3]: https://en.wikipedia.org/wiki/Cellular_automaton
-[4]: https://github.com/chronophasiac/cellular_automaton
+[4]: https://github.com/mikeraimondi/cellular_automaton

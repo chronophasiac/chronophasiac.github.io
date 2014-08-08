@@ -36,33 +36,18 @@
         {% endunless %}
       </nav>
     </div>
-    <nav class="show-for-medium-down top-bar">
+    <nav class="show-for-medium-down top-bar" data-topbar>
       <ul class="title-area">
-        <!-- Title Area -->
         <li class="name">
           <h1><a href="/" id="top-nav-name"><span class="first-name">mike</span> <span class="last-name">raimondi</span></a></h1>
         </li>
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
-
       <section class="top-bar-section">
-        <!-- Left Nav Section -->
-        <ul class="show-for-small left button-group even-2 top-nav-menu">
-            <li class=""><a class="icon-home" href="/">home</a></li>
-            <li><a class="icon-pencil" href="http://www.unlimited-code-works.com" target="_blank">blog</a></li>
-            <li class=""><a class="icon-user" href="/about">about</a></li>
-            <li class=""><a class="icon-folder-open" href="/portfolio">portfolio</a></li>
-            <li class=""><a class="icon-article" href="/resume">r&eacutesum&eacute</a></li>
-            <li class=""><a class="icon-mail" href="/contact">contact</a></li>
-        </ul>
-        <ul class="hide-for-small left top-nav-menu">
-            <li class=""><a class="icon-home" href="/">home</a></li>
-            <li><a class="icon-pencil" href="http://www.unlimited-code-works.com" target="_blank">blog</a></li>
-            <li class=""><a class="icon-user" href="/about">about</a></li>
-            <li class=""><a class="icon-folder-open" href="/portfolio">portfolio</a></li>
-            <li class=""><a class="icon-article" href="/resume">r&eacutesum&eacute</a></li>
-            <li class=""><a class="icon-mail" href="/contact">contact</a></li>
+        <ul class="right">
+          <li class="{{ page.home_active }}"><a href="/">home</a></li>
+          <li class="{{ page.about_active }}"><a href="/about">about</a></li>
+          <li class="{{ page.contact_active }}"><a href="/contact">contact</a></li>
         </ul>
       </section>
     </nav>

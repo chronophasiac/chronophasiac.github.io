@@ -25,22 +25,6 @@ $purple: hsl(259, 95%, 59%);
   }
 }
 
-h3.tagline {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.55em;
-  margin-top: 0;
-}
-
-div.tagline-small-container {
-  position: relative;
-  bottom: 10px;
-
-  h3.tagline-small {
-    margin: 0;
-  }
-}
-
 ul.side-nav-home {
   margin-top: 42px;
 }
@@ -99,33 +83,6 @@ nav.top-bar {
     .last-name {
       font-weight: 600;
       color: hsl(0, 0%, 77%);
-    }
-  }
-
-  @media only screen and (max-width: 940px) {
-    ul.top-nav-menu {
-      margin: 10px 0;
-
-      li {
-        vertical-align: middle;
-        font-size: 1.1em;
-
-        a {
-          background-color: hsl(0, 0%, 13%);
-          padding: 25px 0;
-          margin: 0 1px;
-          text-align: center;
-          box-shadow: none;
-          border: 3px solid hsl(0, 0%, 20%);
-          white-space: nowrap;
-        }
-      }
-    }
-
-    ul.left li a {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: .9em;
     }
   }
 }

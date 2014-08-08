@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'css/app.css': 'src/scss/app.scss'
         }        
       }
     },
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'js/app.min.js': ['bower_components/jquery/dist/jquery.js', 'bower_components/foundation/js/foundation.js']
+          'js/app.min.js': ['bower_components/jquery/dist/jquery.js', 'bower_components/foundation/js/foundation.js', 'src/js/**/*.js']
         }
       }
     },
@@ -28,12 +28,12 @@ module.exports = function(grunt) {
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
-        files: 'scss/**/*.scss',
+        files: 'src/scss/**/*.scss',
         tasks: ['sass']
       },
 
       uglify: {
-        files: 'myjs/**/*.js',
+        files: 'src/js/**/*.js',
         tasks: ['uglify']
       }
     }

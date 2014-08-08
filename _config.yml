@@ -4,8 +4,9 @@ paginate: 5
 permalink: pretty
 excerpt_separator: <span id="more"></span>
 exclude:
-  - node_modules
   - src
+  - node_modules
+  - bower_components
   - Gruntfile.js
   - bower.json
   - package.json

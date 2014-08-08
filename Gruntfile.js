@@ -16,19 +16,33 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+      dist: {
+        files: {
+          'js/app.min.js': ['bower_components/jquery/dist/jquery.js', 'bower_components/foundation/js/foundation.js']
+        }
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
         files: 'scss/**/*.scss',
         tasks: ['sass']
+      },
+
+      uglify: {
+        files: 'myjs/**/*.js',
+        tasks: ['uglify']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'uglify']);
   grunt.registerTask('default', ['build','watch']);
 };

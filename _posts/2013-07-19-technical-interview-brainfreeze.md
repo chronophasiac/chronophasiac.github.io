@@ -1,7 +1,5 @@
 ---
 title: Technical Interview Brainfreeze
-layout: post
-comments: true
 tags:
   - Self Improvement
 ---

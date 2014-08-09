@@ -1,7 +1,5 @@
 ---
 title: Velocity Skepticism
-layout: post
-comments: true
 tags:
   - Development
 ---

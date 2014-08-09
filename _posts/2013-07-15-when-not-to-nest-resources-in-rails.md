@@ -1,7 +1,5 @@
 ---
 title: When (not) to Nest Resources in Rails
-layout: post
-comments: true
 tags:
   - Ruby on Rails
 ---

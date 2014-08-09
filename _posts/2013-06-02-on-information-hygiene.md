@@ -1,7 +1,5 @@
 ---
 title: On Information Hygiene
-layout: post
-comments: true
 tags:
   - Self Improvement
 ---

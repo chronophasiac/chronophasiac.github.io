@@ -1,7 +1,5 @@
 ---
 title: Subtle Rails Backend Gotchas
-layout: post
-comments: true
 tags:
   - Ruby on Rails
 ---

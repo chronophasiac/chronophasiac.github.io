@@ -1,7 +1,5 @@
 ---
 title: Queuing and Scheduling in Rails with Delayed::Job
-layout: post
-comments: true
 tags:
   - Ruby on Rails
 ---

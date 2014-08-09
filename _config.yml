@@ -17,6 +17,19 @@ exclude:
 name: Mike Raimondi
 description: Mike Raimondi's personal site
 url: http://www.mikeraimondi.com
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"
+      comments: true
 
 redcarpet:
   extensions: ['smart']

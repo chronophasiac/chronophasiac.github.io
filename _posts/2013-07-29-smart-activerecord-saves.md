@@ -1,7 +1,5 @@
 ---
 title: Smart ActiveRecord Saves
-layout: post
-comments: true
 tags:
   - Ruby on Rails
 ---

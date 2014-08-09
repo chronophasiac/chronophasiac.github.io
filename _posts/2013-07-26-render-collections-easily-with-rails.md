@@ -1,7 +1,5 @@
 ---
 title: Render Collections Easily With Rails
-layout: post
-comments: true
 tags:
   - Ruby on Rails
 ---

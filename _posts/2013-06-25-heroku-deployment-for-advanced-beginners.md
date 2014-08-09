@@ -1,7 +1,5 @@
 ---
 title: Heroku Deployment for Advanced Beginners
-layout: post
-comments: true
 tags:
   - Ruby on Rails
 ---

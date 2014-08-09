@@ -1,7 +1,5 @@
 ---
 title: Inverse Associations in Rails
-layout: post
-comments: true
 tags:
   - Ruby on Rails
 ---

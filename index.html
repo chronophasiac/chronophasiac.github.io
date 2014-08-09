@@ -18,7 +18,7 @@ home_active: active
 {% for post in paginator.posts %}
   <div class="row post-index">
     <div class="small-12 columns">
-      <h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a class="post-title color-{{ post.excerpt | number_of_words | modulo:5 }}" href="{{ post.url }}">{{ post.title }}</a></h2>
       <p class="author">
         <span class="date">{{ post.date | date_to_long_string }}</span>
       </p>

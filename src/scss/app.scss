@@ -340,23 +340,3 @@ li {
     color: $orange;
   }
 }
-
-.post-index:nth-child(5n) .post-title {
-  color: $green;
-}
-
-.post-index:nth-child(5n+1) .post-title {
-  color: $blue;
-}
-
-.post-index:nth-child(5n+2) .post-title {
-  color: $red;
-}
-
-.post-index:nth-child(5n+3) .post-title {
-  color: $purple;
-}
-
-.post-index:nth-child(5n+4) .post-title {
-  color: $orange;
-}

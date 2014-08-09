@@ -14,6 +14,9 @@ exclude:
   - CNAME
   - Gemfile
   - Procfile
+name: Mike Raimondi
+description: Mike Raimondi's personal site
+url: http://www.mikeraimondi.com
 
 redcarpet:
   extensions: ['smart']

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mike Raimondi</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url}}/feed.xml">
     <link rel="stylesheet" href="/css/app.css" />
     <script src="/js/modernizr.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
@@ -24,6 +25,7 @@
         {% endunless %}
         <li class="{{ page.about_active }}"><a href="/about">about</a></li>
         <li class="{{ page.contact_active }}"><a href="/contact">contact</a></li>
+        <li><a href="/feed.xml" target="_blank">rss</a></li>
         {% unless page.home_active == 'active' %}
           <li>
             <ul class="button-group even-2 social">
@@ -48,6 +50,7 @@
           <li class="{{ page.home_active }}"><a href="/">home</a></li>
           <li class="{{ page.about_active }}"><a href="/about">about</a></li>
           <li class="{{ page.contact_active }}"><a href="/contact">contact</a></li>
+          <li><a href="/feed.xml" target="_blank">rss</a></li>
         </ul>
       </section>
     </nav>

@@ -18,7 +18,7 @@
   </head>
   <body>
   <div class="row">
-    <div class="hide-for-medium-down large-3 columns">
+    <div class="show-for-medium-up medium-3 columns">
       <nav class="side-nav">
         {% unless page.home_active == 'active' %}
           <li><a id="side-nav-name" href="/"><span class="first-name">mike</span> <span class="last-name">raimondi</span></a></li>
@@ -38,7 +38,7 @@
         {% endunless %}
       </nav>
     </div>
-    <nav class="show-for-medium-down top-bar" data-topbar>
+    <nav class="show-for-small-only top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
           <h1><a href="/" id="top-nav-name"><span class="first-name">mike</span> <span class="last-name">raimondi</span></a></h1>
@@ -54,7 +54,7 @@
         </ul>
       </section>
     </nav>
-    <div class="large-9 small-12 columns">
+    <div class="small-12 medium-9 columns">
       {{ content }}
     </div>
   </div>

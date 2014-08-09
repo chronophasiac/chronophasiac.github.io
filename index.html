@@ -2,36 +2,32 @@
 title: Mike Raimondi
 home_active: active
 ---
-<div class="row">
-  <div class="large-12 columns">
-    <h2 class="hide-for-medium-down" id="front-page-name"><span class="first-name">mike</span> <span class="last-name">raimondi</span></h2>
-  </div>
+<div class="row show-for-medium-up">
+  <h2 id="front-page-name"><span class="first-name">mike</span> <span class="last-name">raimondi</span></h2>
 </div>
-<div class="row hide-for-small">
-  <div class="large-12 columns">
-    <ul class="button-group even-4 social">
-      {% include social_buttons.html %}
-    </ul>
-  </div>
+<div class="row show-for-large-up">
+  <ul class="button-group even-4 social small-12 columns">
+    {% include social_buttons.html %}
+  </ul>
 </div>
-<div class="row show-for-small">
-  <div class="small-12 columns">
-    <ul class="button-group even-2 social">
-      {% include social_buttons.html %}
-    </ul>
-  </div>
+<div class="row show-for-medium-down">
+  <ul class="button-group even-2 social small-12 columns">
+    {% include social_buttons.html %}
+  </ul>
 </div>
 {% for post in paginator.posts %}
   <div class="row post-index">
-    <h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="author">
-      <span class="date">{{ post.date | date_to_long_string }}</span>
-    </p>
-    <div class="excerpt">
-      {{ post.excerpt }}
+    <div class="small-12 columns">
+      <h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="author">
+        <span class="date">{{ post.date | date_to_long_string }}</span>
+      </p>
+      <div class="excerpt">
+        {{ post.excerpt }}
+      </div>
+      <a href="{{ post.url }}/#more">[More]</a>
+      <hr>
     </div>
-    <a href="{{ post.url }}/#more">[More]</a>
-    <hr>
   </div>
 {% endfor %}
 

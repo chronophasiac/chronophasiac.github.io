@@ -1,11 +1,8 @@
 ---
 layout: default
 ---
+{% include post_header.html post=page %}
 <div class="post">
-  <h2 class="post-title color-{{ page.excerpt | number_of_words | modulo:5 }}">{{ page.title }}</h2>
-  <p class="author">
-    <span class="date">{{ page.date | date_to_long_string }}</span>
-  </p>
   {{ content }}
 </div>
 {% if page.comments %}

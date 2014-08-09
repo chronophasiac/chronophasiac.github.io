@@ -32,10 +32,7 @@ layout: none
         {% unless page.home_active == 'active' %}
           <li>
             <ul class="button-group even-2 social">
-              <li><a class="button expand github-main-page" href="https://github.com/mikeraimondi" target="_blank"><i class="fi-social-github"></i></a></li>
-              <li><a class="button expand twitter-main-page" href="https://twitter.com/chronophasiac" target="_blank"><i class="fi-social-twitter"></i></a></li>
-              <li><a class="button expand linkedin-main-page" href="http://www.linkedin.com/in/mikerraimondi" target="_blank"><i class="fi-social-linkedin"></i></a></li>
-              <li><a class="button expand facebook-main-page" href="https://www.facebook.com/chronophasiac" target="_blank"><i class="fi-social-facebook"></i></a></li>
+              {% include social_buttons.html classes="expand" %}
             </ul>
           </li>
         {% endunless %}

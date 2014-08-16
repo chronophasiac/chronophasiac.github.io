@@ -17,10 +17,13 @@ exclude:
 name: Mike Raimondi
 description: Mike Raimondi's personal site
 url: http://www.mikeraimondi.com
+gems:
+  - jekyll-sitemap
 defaults:
   -
     scope:
       path: ""
+      type: "page"
     values:
       layout: "default"
   -

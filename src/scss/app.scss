@@ -148,7 +148,6 @@ div.orbit-slide-number {
 footer {
   h4 {
     font-weight: 300;
-    // font-size: 1.1em;
     &.footer-email {
       text-align: right;
 
@@ -202,85 +201,6 @@ footer {
   }
 }
 
-@mixin port-btn {
-  box-shadow: none;
-  font-weight: 300;
-  white-space: nowrap;
-  margin-bottom: 0;
-  border: 0;
-}
-
-@mixin port-link {
-  a.port-blue {
-    @include port-btn;
-    background-color: $blue;
-  }
-
-  a.port-green {
-    @include port-btn;
-    background-color: $green;
-  }
-
-  a.nolink-port-green {
-    color: $green;
-  }
-
-  a.port-orange {
-    @include port-btn;
-    background-color: $orange;
-  }
-
-  a.port-red {
-    @include port-btn;
-    background-color: $red;
-  }
-
-  a.port-purple {
-    @include port-btn;
-    background-color: $purple;
-  }
-}
-
-input.port-filter-btn {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-}
-
-#portfolio-container {
-  h5 {
-    color: #fff;
-    font-weight: 600;
-  }
-
-  h6 {
-    color: #fff;
-    font-weight: 300;
-  }
-
-  div.portfolio-item {
-    padding: 1em;
-    @include port-link;
-    margin: 3px;
-    background-color: #000;
-  }
-
-  div.small-item {
-    font-size: 90%;
-    width: 160px;
-    height: 160px;
-  }
-
-  div.medium-item {
-    width: 326px;
-    height: 160px;
-  }
-
-  div.large-item {
-    width: 326px;
-    height: 326px;
-  }
-}
-
 code {
   border: 1px solid lighten(#3f3f3f, 15%);
   border-radius: 3px;
@@ -288,6 +208,8 @@ code {
 }
 
 pre {
+  border: 1px solid lighten(#3f3f3f, 15%);
+  border-radius: 3px;
   margin-bottom: rem-calc(20);
   padding: 10px;
   overflow-x: auto;

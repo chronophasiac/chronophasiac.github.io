@@ -33,6 +33,7 @@ defaults:
     values:
       layout: "post"
       comments: true
+      author: Mike Raimondi
 
 redcarpet:
   extensions: ['smart']

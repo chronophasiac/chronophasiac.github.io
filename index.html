@@ -17,14 +17,14 @@ home_active: active
 </div>
 {% for post in paginator.posts %}
   <div class="row post-index">
-    <div class="small-12 columns">
+    <article class="small-12 columns">
       {% include post_header.html post=post %}
-      <div class="post">
+      <section itemprop="description" class="post">
         {{ post.excerpt }}
-      </div>
+      </section>
       <h5 class="right"><a href="{{ post.url }}/#more"><i class="fi-plus"></i>More</a></h5>
       <hr>
-    </div>
+    </article>
   </div>
 {% endfor %}
 

@@ -1,5 +1,4 @@
 <header>
   <h2 itemprop="name"><a class="post-title color-{{ include.post.excerpt | number_of_words | modulo:5 }}" href="{{ include.post.url }}" itemprop="url">{{ include.post.title }}</a></h2>
   <h6 class="subheader"><i class="fi-clock"></i><time pubdate itemprop="datePublished" datetime="{{ include.post.date | date_to_xmlschema }}" content="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date_to_long_string }}</time></h6>
-  <h6 class="subheader author">by <span itemprop="author">{{ include.post.author }}</span></h6>
 </header> 

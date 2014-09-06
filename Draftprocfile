@@ -1,0 +1,2 @@
+jekyll: bundle exec jekyll serve --watch --drafts
+grunt: grunt

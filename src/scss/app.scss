@@ -64,23 +64,14 @@ nav.side-nav li {
   }
 }
 
-nav.top-bar {
-  margin-bottom: 10px;
+.first-name {
+  font-weight: 300;
+  color: hsl(0, 0%, 27%);
+}
 
-  #top-nav-name {
-    font-size: 1.45em;
-    white-space: nowrap;
-
-    .first-name {
-      font-weight: 300;
-      color: hsl(0, 0%, 27%);
-    }
-
-    .last-name {
-      font-weight: 600;
-      color: hsl(0, 0%, 77%);
-    }
-  }
+.last-name {
+  font-weight: 600;
+  color: hsl(0, 0%, 77%);
 }
 
 ul.vcard {

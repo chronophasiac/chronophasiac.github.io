@@ -1197,6 +1197,7 @@ $panel-bg: hsl(0, 0%, 7%);
 // $side-nav-link-padding: rem-calc(7 14);
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: $font-weight-normal;
+$side-nav-font-weight: 300;
 // $side-nav-font-weight-active: $side-nav-font-weight;
 // $side-nav-font-family: $body-font-family;
 // $side-nav-font-family-active: $side-nav-font-family;
@@ -1430,6 +1431,7 @@ $topbar-bg: hsl(0, 0%, 6%);
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
 // $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(28);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;

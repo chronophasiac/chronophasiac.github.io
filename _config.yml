@@ -1,5 +1,4 @@
 timezone: America/New_York
-markdown: redcarpet
 paginate: 5
 permalink: pretty
 excerpt_separator: <span id="more"></span>
@@ -16,9 +15,11 @@ exclude:
   - Procfile
 name: Mike Raimondi
 description: Mike Raimondi's personal site
-url: http://www.mikeraimondi.com
+url: https://mikeraimondi.com
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-coffeescript
 defaults:
   -
     scope:
@@ -34,6 +35,11 @@ defaults:
       layout: "post"
       comments: true
       author: Mike Raimondi
-
-redcarpet:
-  extensions: ['smart']
+# GitHub Pages default settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+lsi: false
+highlighter: rouge
+gist:
+  noscript: false

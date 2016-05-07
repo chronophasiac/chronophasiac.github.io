@@ -10,6 +10,12 @@ layout: null
     <title>{{ page.title }}</title>
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url}}/feed.xml">
     <link rel="stylesheet" href="/css/app.css" />
+    {% if paginator.previous_page %}
+      <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" />
+    {% endif %}
+    {% if paginator.next_page %}
+      <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" />
+    {% endif %}
     <script src="/js/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
     <script>
